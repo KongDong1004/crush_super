@@ -1,6 +1,7 @@
 "use client";
 
 
+import Image from "next/image";
 import { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { generatePowerballNumbers, LotteryResult } from "../lib/lotteryUtils";
@@ -19,7 +20,7 @@ export default function LotteryGenerator() {
 
     // Ref for saving image
     const generatorRef = useRef<HTMLDivElement>(null);
-    const historyRef = useRef<HTMLDivElement>(null);
+    const historyRef = useRef<HTMLHTMLDivElement>(null);
 
     const handleCopyAll = () => {
         if (history.length === 0) return;
@@ -126,10 +127,13 @@ export default function LotteryGenerator() {
         <>
             {/* GLOBAL BACKGROUND (Added per user request "맨뒤에") */}
             <div className="fixed inset-0 z-[-1]">
-                <img
+                <Image
                     src="/heaven_bg.webp"
                     alt="Global Background"
-                    className="w-full h-full object-cover opacity-60"
+                    fill
+                    className="object-cover opacity-60"
+                    priority
+                    sizes="100vw"
                 />
                 <div className="absolute inset-0 bg-black/70" /> {/* Scrim for readability */}
             </div>
@@ -145,10 +149,13 @@ export default function LotteryGenerator() {
                     {/* ... (Hero content same as before) ... */}
                     {/* BACKGROUND LAYER: Heaven Image */}
                     <div className="absolute inset-0 z-0">
-                        <img
+                        <Image
                             src="/heaven_bg.webp"
                             alt="Heaven Background"
-                            className="w-full h-full object-cover opacity-90"
+                            fill
+                            className="object-cover opacity-90"
+                            priority
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1000px"
                         />
                         {/* Gradient Overlay for blending */}
                         <div className="absolute inset-0 bg-gradient-to-t from-[#0f172a] via-[#0f172ap]/30 to-transparent mix-blend-multiply" />
