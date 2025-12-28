@@ -34,14 +34,14 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://crush-super.netlify.app"),
+  metadataBase: new URL("https://crush-super.com"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://crush-super.netlify.app",
+    url: "https://crush-super.com",
     title: "Superball - Win the US Lottery",
     description: "Generate your winning Powerball numbers instantly. Beautiful, fast, and effectively random.",
     siteName: "Superball Lottery",
