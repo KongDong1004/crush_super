@@ -37,7 +37,7 @@ export default function Home() {
         </div>
 
         <footer className="p-6 text-center text-white/30 text-sm">
-          © {new Date().getFullYear()} LuckyGen. For entertainment purposes only.
+          © {new Date().getFullYear()} Superball. All rights reserved.
         </footer>
       </div>
     </main>
