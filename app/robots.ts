@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
             allow: '/',
             disallow: '/private/',
         },
-        sitemap: 'https://superball.vercel.app/sitemap.xml',
+        sitemap: 'https://crush-super.netlify.app/sitemap.xml',
     }
 }

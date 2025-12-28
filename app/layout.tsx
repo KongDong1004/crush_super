@@ -34,20 +34,20 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://superball.vercel.app"), // Placeholder, recommend user updates this
+  metadataBase: new URL("https://crush-super.netlify.app"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://superball.vercel.app",
+    url: "https://crush-super.netlify.app",
     title: "Superball - Win the US Lottery",
     description: "Generate your winning Powerball numbers instantly. Beautiful, fast, and effectively random.",
     siteName: "Superball Lottery",
     images: [
       {
-        url: "/og-image.jpg", // Recommend user adds this image
+        url: "/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Superball Lottery Generator Interface",
