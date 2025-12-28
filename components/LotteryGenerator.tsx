@@ -20,7 +20,7 @@ export default function LotteryGenerator() {
 
     // Ref for saving image
     const generatorRef = useRef<HTMLDivElement>(null);
-    const historyRef = useRef<HTMLHTMLDivElement>(null);
+    const historyRef = useRef<HTMLDivElement>(null);
 
     const handleCopyAll = () => {
         if (history.length === 0) return;
