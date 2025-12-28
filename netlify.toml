@@ -4,3 +4,9 @@
 
 [[plugins]]
   package = "@netlify/plugin-nextjs"
+
+[[redirects]]
+  from = "https://crush-super.netlify.app/*"
+  to = "https://crush-super.com/:splat"
+  status = 301
+  force = true
