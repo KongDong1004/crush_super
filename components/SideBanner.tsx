@@ -25,7 +25,7 @@ export default function SideBanner({ side = 'right' }: { side?: 'left' | 'right'
                         playsInline
                         className="w-full h-full object-cover opacity-100 transition-opacity duration-700"
                     >
-                        <source src="/1228 (1).mov" type="video/mp4" />
+                        <source src="/1228_optimized.webm" type="video/webm" />
                     </video>
 
                     {/* Overlay Gradient - Brighter/Golden */}

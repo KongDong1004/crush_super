@@ -142,8 +142,6 @@ export default function LotteryGenerator() {
 
                 {/* Hero / Visual Section (User Requested "Window above") */}
                 <motion.div
-                    initial={{ opacity: 0, y: -20 }}
-                    animate={{ opacity: 1, y: 0 }}
                     className="w-full aspect-[21/9] md:aspect-[2/1] relative rounded-3xl overflow-hidden border-2 border-[#D4AF37]/50 shadow-[0_0_30px_rgba(212,175,55,0.3)] bg-black"
                 >
                     {/* ... (Hero content same as before) ... */}
