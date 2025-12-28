@@ -9,11 +9,11 @@ export function useSlotMachineSound() {
 
     useEffect(() => {
         // Initialize Audio objects
-        rollingAudioRef.current = new Audio("/sounds/rolling.wav");
+        rollingAudioRef.current = new Audio("/sounds/rolling.mp3");
         rollingAudioRef.current.loop = true; // Loop the rolling sound
 
-        lockAudioRef.current = new Audio("/sounds/lock.wav");
-        winAudioRef.current = new Audio("/sounds/번호 완성음.wav");
+        lockAudioRef.current = new Audio("/sounds/lock.mp3");
+        winAudioRef.current = new Audio("/sounds/complete.mp3");
 
         // Clean up
         return () => {
